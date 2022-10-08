@@ -1,0 +1,16 @@
+{
+  "name": "comp2112-f2022-week5",
+  "version": "1",
+  "description": "Demo app for Week 2",
+  "main": "index.js",
+  "repository": "https://github.com/Ch1r0ku/COMP2112-Week5",
+  "author": "Ch1r0ku <romanlysenkowork@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@popperjs/core": "^2.11.6",
+    "@types/jquery": "^3.5.14",
+    "bootstrap": "^5.2.1",
+    "jquery": "^3.6.1"
+  }
+}

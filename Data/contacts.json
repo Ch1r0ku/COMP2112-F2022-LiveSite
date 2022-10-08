@@ -1,0 +1,7 @@
+{
+    "ContactList":[
+        {"FullName": "Jim Carrey", "ContactNumber": "249 567 8931", "EmailAddress": "hello1@gmail.com"},  
+        {"FullName": "Tom Tsiliopoulos", "ContactNumber": "249 567 8932", "EmailAddress": "hello2@gmail.com"},
+        {"FullName": "Bob Marley", "ContactNumber": "249 567 8933", "EmailAddress": "hello3@gmail.com"}
+    ]
+    }
