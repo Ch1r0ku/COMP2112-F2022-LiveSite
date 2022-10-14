@@ -1,0 +1,38 @@
+
+
+    /**
+     *This method saves our data to localStorage
+     *
+     * @param {any[]} contactList
+     */
+    function SaveContactListData(contactList: any){
+        let count = 0;
+        for (const contact of contactList) 
+        {
+            let newContact = new Contact(contact.FullName, contact.ContactNumber, contact.EmailAddress);
+            localStorage.setItem(count.toString(), newContact.toJSON());
+            count++;
+        }
+    }
+
+    /**
+     *This method reads our data from localStorage and returns a Contact Array
+     *
+     * @returns  {Contact[]}
+     */
+    function LoadContactListData():Contact[]
+    {
+        //create an empty Contact Array container
+        let ContactArray = new Array<Contact>();
+
+        let keys = Object.keys(localStorage);
+        for (let key of keys) 
+        {
+            let newContact = new Contact();
+            newContact.fromJSON(localStorage.getItem(key));
+            ContactArray.push(newContact);
+        }
+        return ContactArray;
+    }
+
+    
